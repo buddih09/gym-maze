@@ -74,6 +74,7 @@ class MazeView2D:
             img_output = self.__view_update(mode)
             self.__controller_update()
         except Exception as e:
+        print('pygame exception')
             self.__game_over = True
             self.quit_game()
             raise e
